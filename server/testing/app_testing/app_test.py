@@ -105,7 +105,7 @@ class TestCheckSession:
             })
             
             with client.session_transaction() as session:
-                
+                # breakpoint()
                 session['user_id'] = 1
 
             response = client.get('/check_session')
